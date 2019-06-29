@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Lh4-OB-jsN">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="kQ8-ZM-dDH">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Lh4-OB-jsN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Qpd-w1-HCy">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="bOn-b1-xKO" kind="relationship" relationship="viewControllers" id="olx-xZ-x4X"/>
+                        <segue destination="7Zs-2h-jcA" kind="relationship" relationship="viewControllers" id="bwk-RB-3eK"/>
+                        <segue destination="uWk-ZE-Eax" kind="relationship" relationship="viewControllers" id="EtC-Mz-wqd"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2yy-If-tPH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
+        </scene>
+        <!--Wallets-->
+        <scene sceneID="d9Q-dw-elz">
+            <objects>
+                <viewController id="bOn-b1-xKO" customClass="WalletsViewController" customModule="Moneykeeper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u4S-ic-EVR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CvV-jo-Cn3" userLabel="WalletView1" customClass="WalletUIView" customModule="Moneykeeper" customModuleProvider="target">
+                                <rect key="frame" x="40" y="84" width="295" height="605"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mp0-6f-b8z">
+                                        <rect key="frame" x="55" y="236" width="8" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QAQ-5B-F8J" userLabel="WalletView2" customClass="WalletUIView" customModule="Moneykeeper" customModuleProvider="target">
+                                <rect key="frame" x="375" y="84" width="295" height="605"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="faT-al-ZXb">
+                                        <rect key="frame" x="143" y="292" width="10" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bti-40-qaY" userLabel="WalletView3" customClass="WalletUIView" customModule="Moneykeeper" customModuleProvider="target">
+                                <rect key="frame" x="377" y="84" width="295" height="605"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwO-Vg-w1r">
+                                        <rect key="frame" x="142" y="292" width="11" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Xc5-w0-icP">
+                                <rect key="frame" x="168" y="692" width="39" height="37"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="CvV-jo-Cn3" firstAttribute="centerX" secondItem="Xc5-w0-icP" secondAttribute="centerX" id="Kch-lH-MpU"/>
+                            <constraint firstItem="CvV-jo-Cn3" firstAttribute="leading" secondItem="KEV-Xl-xXa" secondAttribute="leading" constant="40" id="TIj-dG-gkf"/>
+                            <constraint firstItem="Xc5-w0-icP" firstAttribute="top" secondItem="CvV-jo-Cn3" secondAttribute="bottom" constant="3" id="XYg-7t-6eP"/>
+                            <constraint firstItem="KEV-Xl-xXa" firstAttribute="bottom" secondItem="CvV-jo-Cn3" secondAttribute="bottom" constant="40" id="avC-9l-gYn"/>
+                            <constraint firstItem="CvV-jo-Cn3" firstAttribute="top" secondItem="KEV-Xl-xXa" secondAttribute="top" constant="40" id="eTL-sL-hgt"/>
+                            <constraint firstItem="Xc5-w0-icP" firstAttribute="centerX" secondItem="KEV-Xl-xXa" secondAttribute="centerX" id="sah-14-Rlj"/>
+                            <constraint firstItem="Xc5-w0-icP" firstAttribute="bottom" secondItem="KEV-Xl-xXa" secondAttribute="bottom" id="zDp-kU-qLh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KEV-Xl-xXa"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="pXP-a4-RUU" appends="YES" id="uLJ-aJ-nze"/>
+                        </connections>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Wallets" image="Icon_wallet" id="kyR-An-8fn"/>
+                    <connections>
+                        <outlet property="pageControl" destination="Xc5-w0-icP" id="q4x-G2-Vmc"/>
+                        <outlet property="walletView1" destination="CvV-jo-Cn3" id="aXc-KV-O2W"/>
+                        <outlet property="walletView2" destination="QAQ-5B-F8J" id="o2e-Fl-HYK"/>
+                        <outlet property="walletView3" destination="bti-40-qaY" id="ClK-Tr-f7J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y7C-Tc-MAm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="pXP-a4-RUU">
+                    <connections>
+                        <action selector="panGestureAction:" destination="bOn-b1-xKO" id="RDg-7K-R9W"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-1086" y="900"/>
+        </scene>
+        <!--Statistic-->
+        <scene sceneID="smn-Yr-DW8">
+            <objects>
+                <viewController id="7Zs-2h-jcA" customClass="StatisticViewController" customModule="Moneykeeper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xqP-xa-Al6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nhS-JD-buz">
+                                <rect key="frame" x="186" y="267" width="42" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="cz3-i1-6MX"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Statistic" image="Icon_statistic" id="psA-GF-hKG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="knh-GI-R9o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="900.66964285714278"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="8kn-5i-qCA">
+            <objects>
+                <viewController id="uWk-ZE-Eax" customClass="SettingsViewController" customModule="Moneykeeper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IEA-t1-JP5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vUt-id-4hR">
+                                <rect key="frame" x="197" y="264" width="42" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Zmc-s6-cjU"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="Icon_settings" id="kvs-Cu-cfr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4CZ-XS-40h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1063.768115942029" y="900.66964285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon_settings" width="23" height="23"/>
+        <image name="Icon_statistic" width="23" height="23"/>
+        <image name="Icon_wallet" width="23" height="23"/>
+    </resources>
+</document>

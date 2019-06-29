@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BCE8913922BFE736006F2588 /* WalletUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE8913822BFE736006F2588 /* WalletUIView.swift */; };
 		BCE8B4D222BF6E3300855071 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE8B4D122BF6E3300855071 /* AppDelegate.swift */; };
 		BCE8B4D422BF6E3300855071 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE8B4D322BF6E3300855071 /* ViewController.swift */; };
 		BCE8B4D722BF6E3300855071 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCE8B4D522BF6E3300855071 /* Main.storyboard */; };
 		BCE8B4DA22BF6E3300855071 /* Moneykeeper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BCE8B4D822BF6E3300855071 /* Moneykeeper.xcdatamodeld */; };
 		BCE8B4DC22BF6E3500855071 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCE8B4DB22BF6E3500855071 /* Assets.xcassets */; };
 		BCE8B4DF22BF6E3500855071 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCE8B4DD22BF6E3500855071 /* LaunchScreen.storyboard */; };
+		BCE8B4E722BF6F3600855071 /* WalletsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE8B4E622BF6F3600855071 /* WalletsViewController.swift */; };
+		BCE8B4E922BF6F4F00855071 /* StatisticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE8B4E822BF6F4F00855071 /* StatisticViewController.swift */; };
+		BCE8B4EB22BF6F6F00855071 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE8B4EA22BF6F6F00855071 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BCE8913822BFE736006F2588 /* WalletUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletUIView.swift; sourceTree = "<group>"; };
 		BCE8B4CE22BF6E3300855071 /* Moneykeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moneykeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCE8B4D122BF6E3300855071 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCE8B4D322BF6E3300855071 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +29,9 @@
 		BCE8B4DB22BF6E3500855071 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCE8B4DE22BF6E3500855071 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCE8B4E022BF6E3500855071 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCE8B4E622BF6F3600855071 /* WalletsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletsViewController.swift; sourceTree = "<group>"; };
+		BCE8B4E822BF6F4F00855071 /* StatisticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticViewController.swift; sourceTree = "<group>"; };
+		BCE8B4EA22BF6F6F00855071 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,41 @@
 			children = (
 				BCE8B4D122BF6E3300855071 /* AppDelegate.swift */,
 				BCE8B4D322BF6E3300855071 /* ViewController.swift */,
-				BCE8B4D522BF6E3300855071 /* Main.storyboard */,
+				BCE8B4EE22BF6F9100855071 /* Models */,
+				BCE8B4ED22BF6F8500855071 /* Views */,
+				BCE8B4EC22BF6F7A00855071 /* Controllers */,
 				BCE8B4DB22BF6E3500855071 /* Assets.xcassets */,
 				BCE8B4DD22BF6E3500855071 /* LaunchScreen.storyboard */,
 				BCE8B4E022BF6E3500855071 /* Info.plist */,
 				BCE8B4D822BF6E3300855071 /* Moneykeeper.xcdatamodeld */,
 			);
 			path = Moneykeeper;
+			sourceTree = "<group>";
+		};
+		BCE8B4EC22BF6F7A00855071 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BCE8B4E622BF6F3600855071 /* WalletsViewController.swift */,
+				BCE8B4E822BF6F4F00855071 /* StatisticViewController.swift */,
+				BCE8B4EA22BF6F6F00855071 /* SettingsViewController.swift */,
+				BCE8913822BFE736006F2588 /* WalletUIView.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BCE8B4ED22BF6F8500855071 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BCE8B4D522BF6E3300855071 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BCE8B4EE22BF6F9100855071 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +129,9 @@
 		BCE8B4C622BF6E3300855071 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					test,
+				);
 				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Sashko Shel";
@@ -139,8 +178,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCE8B4DA22BF6E3300855071 /* Moneykeeper.xcdatamodeld in Sources */,
+				BCE8913922BFE736006F2588 /* WalletUIView.swift in Sources */,
+				BCE8B4E722BF6F3600855071 /* WalletsViewController.swift in Sources */,
 				BCE8B4D422BF6E3300855071 /* ViewController.swift in Sources */,
+				BCE8B4E922BF6F4F00855071 /* StatisticViewController.swift in Sources */,
 				BCE8B4D222BF6E3300855071 /* AppDelegate.swift in Sources */,
+				BCE8B4EB22BF6F6F00855071 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
